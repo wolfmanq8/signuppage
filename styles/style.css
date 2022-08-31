@@ -4,11 +4,11 @@ body {
 form { 
   background-color: #FF9500;
   width: 300px;
-  height: 500px; 
+  height: 400px; 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  margin-top: 20px;
+  margin-top: 100px;
   border: 3px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
@@ -16,12 +16,48 @@ form {
 
 input { 
   background-color: #FF9500;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus {
+  background-color: #FF8800;
+}
+
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
 }
 
 button {
   background-color: black;
   color: #FF9500;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: #1F1D1D;
+
 a { 
   color: black;
 }
